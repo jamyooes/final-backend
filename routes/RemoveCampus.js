@@ -3,7 +3,7 @@ const router = express.Router();
 const {Campus} = require('../database/models');
 
 //so we don't have to use try-catch for each request handler
-const ash = require('express-async-handler');
+//const ash = require('express-async-handler');
 
 router.delete('/:id', function(req, res, next) {
     Campus.destroy({

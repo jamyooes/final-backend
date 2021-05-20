@@ -6,13 +6,11 @@ const {Student} = require('../database/models');
 const ash = require('express-async-handler');
 
 
-//Add a new student
+//Add a new student??
 router.post('/', function(req, res, next) {
     Student.create(req.body)
       .then(newStudent => res.status(200).json(newStudent))
       .catch(err => next(err));
-  });
+});
   
-
-
 module.exports = router;
