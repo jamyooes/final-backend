@@ -20,6 +20,7 @@ const Student = db.define("student", {
 
   imageUrl: {
     type: Sequelize.STRING,
+    defaultValue: "",
   },
 
   gpa: {
