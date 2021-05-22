@@ -5,25 +5,21 @@ const Student = db.define("student", {
   firstname: {
     type: Sequelize.STRING,
     allowNull: false,
-    defaultValue:" "
   },
 
   lastname: {
     type: Sequelize.STRING,
     allowNull: false,
-    defaultValue:" "
   },
 
   email: {
     type: Sequelize.STRING,
     allowNull: false,
-    defaultValue:" ",
-    validate: {isEmail: true}
+    validate: { isEmail: true },
   },
 
   imageUrl: {
     type: Sequelize.STRING,
-    defaultValue: "",
   },
 
   gpa: {
@@ -31,9 +27,9 @@ const Student = db.define("student", {
     allowNull: false,
     defaultValue: 0.0, //for the student that haven't taken classes yet
     validate: {
-      min:0.0,
-      max:4.0
-    }
+      min: 0.0,
+      max: 4.0,
+    },
   },
 });
 
