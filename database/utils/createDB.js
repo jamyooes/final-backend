@@ -5,7 +5,7 @@ const config = {
   user: dbUser,
   host: "localhost",
   port: 5432,
-  password: 1234, //
+  password: dbPwd, //
 };
 
 //attempt to create DB
