@@ -23,7 +23,7 @@ const Campus = db.define("campus", {
   description: {
     type: Sequelize.STRING,
     allowNull: false,
-    defaultValue:""
+    defaultValue:" "
   }
 
 });
